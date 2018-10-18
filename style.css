@@ -1,0 +1,357 @@
+/*navigation bar*/
+nav {
+	text-align: center;
+	position: fixed; 
+	width: 100%;
+	z-index: 2;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.nav-wrapper li{
+	display: inline; 
+	padding: 30px;
+	font-family: 'Krub', sans-serif;
+}
+
+.nav-wrapper a{
+	color: white;
+}
+
+body{
+	margin: 0px;
+}
+
+
+/*homepage*/
+#homepage{
+	background-color: black;
+	height: 100vh;
+	padding: 80px 20px; 
+}
+
+#homepagetextbox{
+	z-index: 3;
+	position: absolute;
+	top: 350px;
+	left: 550px;
+	display: flex;
+	justify-content: center;
+	background-color: black;
+	height: 205px;
+	width: 400px;
+	opacity: 0.6;
+	animation: fadeinopacity 5s 1;
+}
+
+#homepagetext{
+	position: absolute;
+	z-index: 4;
+	font-size: 50px;
+	display: flex;
+	flex-direction: column;
+	top: 350px;
+	left: 690px;
+	font-family: 'Krub', sans-serif;
+	color: white;
+	animation: fadein 5s 1;	
+}
+
+#bund{
+	left: 60px;
+	position: relative;
+}
+
+#arrow{
+	padding-left: 50%;
+	color: white;
+	position: relative;
+	top: 10px;
+	z-index: 2;
+	animation: hoverarrow 1s linear infinite;
+}
+
+@keyframes hoverarrow{
+	0% 100% {top:8px}
+	50% {top:15px}
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeinopacity {
+    from { opacity: 0; }
+    to   { opacity: .6; }
+}
+
+
+/*about*/
+#about{
+	background-image: linear-gradient(black, white);
+	height: 100vh;
+	padding: 80px 20px; 
+}
+
+#me{
+	top:80px;
+	position: relative;
+	left:20px;
+}
+
+#speechbubble{
+	position: absolute;
+	left: 525px;
+}
+
+#abouttext{
+	position: relative;
+	/*background-color: blue;*/
+	height: 400px;
+	width: 720px;
+	left: 600px;
+	bottom: 500px;
+	font-family: 'Covered By Your Grace', cursive;
+	font-size: 30px;
+	text-align: center;
+}
+
+
+/*school life*/
+#school{
+	background-image: linear-gradient(black, #440C70, white);
+	height: 100vh;
+	padding: 80px 20px; 
+}
+
+#hoverpen{
+	/*background-color: black;*/
+	z-index: 1;
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	left: 690px;
+}
+
+#hoverpen:hover{
+	cursor: pointer;
+}
+
+#penpaper{
+	display: block;
+	position: relative;
+	left: 650px;
+	bottom: 10px;
+	animation: hoverclickme 1s linear infinite;
+}
+
+#notebook{
+	position: absolute;
+	left: 240px;
+}
+
+@keyframes hoverclickme{
+	0% 100% {bottom:15px}
+	50% {bottom:5px}
+}
+
+#schooltext{
+	z-index: 2;
+	display: none;
+	/*background-color: blue;*/
+	height: 580px;
+	width: 420px;
+	position: absolute;
+	left: 790px; 
+	top: 2260px;
+	font-family: 'Loved by the King', cursive;
+	font-size:25px;
+}
+
+#ima{
+	z-index: 2;
+	display: none;
+	position: absolute;
+	left:250px;
+	top: 2300px
+}
+
+#nyush{
+	z-index: 2;
+	display: none;
+	position: absolute;
+	left:250px;
+	top: 2570px
+}
+
+
+/*personal thoughts*/
+#personal{
+	background-image: linear-gradient(black,#000066,#000066);
+	height: 100vh;
+	padding: 60px 20px; 
+}
+
+.text{
+	position: absolute;
+	color: white;
+	left: 360px;
+	width: 740px;
+	font-size: 19px;
+	font-family: 'Nothing You Could Do', cursive;
+}
+
+#watertext{
+	top:3220px;
+}
+
+#olympicstext{
+	top:3415px;
+}
+
+#culturetext{
+	top:3610px;
+}
+
+#peopletext{
+	top:3825px;
+}
+
+#text1{
+	background-color: white;
+	opacity: .2;
+	position: absolute;
+	height: 180px;
+	width: 760px;
+	left: 350px;
+	top:3225px;
+}
+
+#text2{
+	background-color: white;
+	opacity: .2;
+	position: absolute;	height: 180px;
+	width: 760px;
+	left: 350px;
+	top:3425px;
+}
+
+#text3{
+	background-color: white;
+	opacity: .2;
+	position: absolute;
+	height: 180px;
+	width: 760px;
+	left: 350px;
+	top:3625px;
+}
+
+#text4{
+	background-color: white;
+	opacity: .2;
+	position: absolute;	
+	height: 180px;
+	width: 760px;
+	left: 350px;
+	top:3825px;
+}
+
+@keyframes fadeinleft{
+	0% {
+	 	opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+    	transform: translateX(0);
+    }
+}
+
+#squirtle{
+	position: absolute;
+	left:80px
+}
+
+#olympics{
+	position: absolute;
+	right:20px;
+	top:3425px;
+}
+
+#culture{
+	position: absolute;
+	top:3625px;
+	left:50px;
+}
+
+#people{
+	position: absolute;
+	right:20px;
+	top:3825px;
+	right:50px;
+}
+
+
+/*things to consider*/
+#consider{
+	background-image: linear-gradient(#000066,white,white);
+	height: 100vh;
+	padding: 130px 20px; 
+}	
+
+#considertext{
+	z-index: 1;
+	position: relative;
+	bottom:600px;
+	left:360px;
+	/*background-color: blue;*/
+	text-align: center;
+	height: 350px;
+	width: 650px;
+	font-size: 20px;
+	font-family: 'Kalam', cursive;
+}
+
+#bubble{
+	position: relative;
+	left: 0px;
+	bottom:80px;
+	animation: bubblemove 1s linear infinite;
+}
+
+#bubbledot1{
+	position: relative;
+	left:1210px;
+	bottom: 220px;
+	animation: bubbledot1move 1s linear infinite;
+}
+
+#bubbledot2{
+	position: relative;
+	left:1200px;
+	bottom:160px;
+	animation: bubbledot2move 1s linear infinite;}
+}
+
+#thinkman{
+	position: absolute;
+}
+
+@keyframes bubblemove{
+	0% 100% {left:10px}
+	50% {left: 5px}
+}
+
+@keyframes bubbledot1move{
+	0% 100% {left: 1225px}
+	50% {left: 1205px}
+}
+
+@keyframes bubbledot2move{
+	0% 100% {left:1195px}
+	50% {left:1205px}
+}
+
